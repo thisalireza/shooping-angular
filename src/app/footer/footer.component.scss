@@ -1,0 +1,26 @@
+.footer-social--icons{
+  transition: transform 0.4s;
+}
+
+.footer-social--icons:hover{
+  transform: scale(1.3);
+  transition: all 0.4s;
+}
+
+
+.footer-about--logo{
+  width: 200px;
+}
+
+
+.footer-symbol--logo{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 0.3rem auto;
+}
+
+
+.list-unstyled{
+  padding-right: 0;
+}

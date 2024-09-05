@@ -1,0 +1,125 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+@import 'mdb-angular-ui-kit/assets/scss/mdb.scss';
+
+//Regular font
+@font-face {font-family: "YekanBakh-Regular";
+  src: url("./assets/fonts/Yekan Bakh/YekanBakh-Regular/YekanBakh-Regular.eot"); /* IE9*/
+  src: url("./assets/fonts/Yekan Bakh/YekanBakh-Regular/YekanBakh-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("./assets/fonts/Yekan Bakh/YekanBakh-Regular/YekanBakh-Regular.woff2") format("woff2"), /* chrome、firefox */
+  url("./assets/fonts/Yekan Bakh/YekanBakh-Regular/YekanBakh-Regular.woff") format("woff"), /* chrome、firefox */
+  url("./assets/fonts/Yekan Bakh/YekanBakh-Regular/YekanBakh-Regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("./assets/fonts/Yekan Bakh/YekanBakh-Regular/YekanBakh-Regular.svg#YekanBakh-Regular") format("svg"); /* iOS 4.1- */
+}
+
+//Bold font
+@font-face {font-family: "YekanBakh-Bold";
+  src: url("./assets/fonts/Yekan Bakh/YekanBakh-Bold/YekanBakh-Bold.eot"); /* IE9*/
+  src: url("./assets/fonts/Yekan Bakh/YekanBakh-Bold/YekanBakh-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("./assets/fonts/Yekan Bakh/YekanBakh-Bold/YekanBakh-Bold.woff2") format("woff2"), /* chrome、firefox */
+  url("./assets/fonts/Yekan Bakh/YekanBakh-Bold/YekanBakh-Bold.woff") format("woff"), /* chrome、firefox */
+  url("./assets/fonts/Yekan Bakh/YekanBakh-Bold/YekanBakh-Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("./assets/fonts/Yekan Bakh/YekanBakh-Bold/YekanBakh-Bold.svg#YekanBakh-Regular") format("svg"); /* iOS 4.1- */
+}
+
+h1,h2,h3,h4,h5,h6,p,span,li,ul{
+  font-family: "YekanBakh-Regular", sans-serif !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+}
+
+
+
+.fs-12{
+  font-size: 12px;
+}
+
+.fs-14{
+  font-size: 14px;
+}
+
+.fs-16{
+  font-size: 16px;
+}
+
+.fs-18{
+  font-size: 18px;
+}
+
+.fs-20{
+  font-size: 20px;
+}
+
+.fs-22{
+  font-size: 22px;
+}
+
+.fs-24{
+  font-size: 24px;
+}
+
+.fs-26{
+  font-size: 26px;
+}
+
+.fs-28{
+  font-size: 28px;
+}
+
+.fs-30{
+  font-size: 30px;
+}
+
+.fs-32{
+  font-size: 32px;
+}
+
+.fs-34{
+  font-size: 34px;
+}
+
+.fs-36{
+  font-size: 36px;
+}
+
+.fs-38{
+  font-size: 38px;
+}
+
+
+.fs-40{
+  font-size: 40px;
+}
+
+
+.text-justify{
+  text-align: justify;
+  direction: rtl;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  Scrollbar-width: thin;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #54595f00 !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb  {
+  background: #EE1F1F !important;
+  border-radius:10px !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #626262 !important;
+}
