@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top " id="navbar-expand-light">
   <!-- Container wrapper -->
   <div class="container-fluid">
 
@@ -24,23 +24,7 @@
     >
 
       <!-- Search form -->
-      <form class="d-flex input-group w-auto ">
-        <input
-          type="search"
-          class="form-control  "
-          placeholder="جستجو..."
-          aria-label="Search"
-          dir="rtl"
-        />
-        <button class="btn btn-outline-danger " type="button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-            <path d="M21 21l-6 -6" />
-          </svg>
-        </button>
-      </form>
-
+          <app-search></app-search>
       <!-- Menu links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
         <li class="nav-item">
@@ -71,3 +55,12 @@
   <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
+
+
+<!--scroll to top-->
+<div (click)="scrollToTop()" *ngIf="showingScrollToTop"  class="button-scroll-to-top p-2">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-up ">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M6 15l6 -6l6 6" />
+  </svg>
+</div>

@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import {MdbCarouselModule,} from "mdb-angular-ui-kit/carousel";
-import {ProductListComponent} from "../product-list/product-list.component";
+import {ProductListComponent} from "../../shopping/product-list/product-list.component";
 import {QuestionAnswerComponent} from "../question-answer/question-answer.component";
 import {ArticleComponent} from "../article/article.component";
+import {CategoryComponent} from "../../shopping/category/category.component";
 
 
 
@@ -14,7 +15,8 @@ import {ArticleComponent} from "../article/article.component";
     MdbCarouselModule,
     ProductListComponent,
     QuestionAnswerComponent,
-    ArticleComponent
+    ArticleComponent,
+    CategoryComponent
   ],
   templateUrl: './homePage.component.html',
   styleUrl: './homePage.component.scss'

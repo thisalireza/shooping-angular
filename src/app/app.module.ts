@@ -28,7 +28,7 @@ import {HomePageComponent} from "./home-page/homePage/homePage.component";
 
 // Initialization for ES Users
 import { Collapse,initMDB } from 'mdb-ui-kit';
-import {ProductListComponent} from "./home-page/product-list/product-list.component";
+import {ProductListComponent} from "./shopping/product-list/product-list.component";
 
 initMDB({ Collapse });
 
