@@ -1,18 +1,23 @@
 <div class="container">
   <section class="py-5">
-    <h4 class="fw-bold fs-22 text-center">محصولات</h4>
+    <h4 class="fw-bold fs-22 text-center pb-3" >محصولات ({{products.length}}) </h4>
     <div class="row row-cols-2 row-cols-md-4 g-4 ">
-      <div class="col rounded-3  card-product ">
+      <div class="col rounded-3  card-product" *ngFor="let prod of products; let i =index;">
         <div class="card h-100 ">
-          <img [src]="product.image"
-               class="card-img-top w-100 px-3" alt="Skyscrapers"/>
-          <div class="card-body">
-            <h3 class="card-title text-center fw-bold" lang="en_US">{{product.name}}</h3>
+          <img [src]="prod.imageURL"
+               class="card-img-top w-100 rounded-3 px-3" alt="Skyscrapers"/>
+          <div class="card-body py-0">
+            <h3 class="card-title text-center fw-bold" lang="en_US">{{prod.name}}</h3>
             <div class="pt-2">
-              <p>رنگ: {{product.color}}</p>
-              <p>وضعیت موجودی: {{product.instock > 0
-                ? product.instock + " کالا موجود است"
-                : "کالایی موجود نیست"
+              <p>رنگ: {{prod.color}}</p>
+              <p>کد محصول: {{i+1000}}</p>
+
+              <p [ngStyle]="{
+              fontWeight:'bold',
+              color: prod.is_in_inventory ? 'green' : '#EE1F1F'
+              }" > {{prod.is_in_inventory
+                ?  " کالا موجود است"
+                : "کالا موجود نیست"
                 }}
               </p>
             </div>
@@ -20,14 +25,14 @@
 
           </div>
           <div class="card-footer  text-center">
-            <del> {{product.price + "تومن"}}</del>
-            <p>تخفیف:   {{product.discount}}   درصد </p>
-            <p>قیمت با تخفیف:   {{getDiscountPrice().toFixed()}}   تومن </p>
+            <del> {{prod.price + "تومن"}}</del>
+            <p *ngIf="prod.discountPrice">تخفیف:   {{prod.discountPrice }} % </p>
+            <p>   {{(this.prod.price - (this.prod.price * this.prod.discountPrice) / 100).toFixed()}}   تومن </p>
             <!--            <p> {{name}} </p>-->
             <!--            <button class="btn btn-outline-danger " [disabled]="!(product.instock > 0)" >خرید</button>-->
             <!--            <input (input)="onNameChange($event)">-->
+            <p > تعداد:</p>
             <button class="btn rounded-3 " (click)="increaseCardValue($event)">-</button>
-
             <span class="px-2"> {{ addToCard }} </span>
             <button class="btn rounded-3" (click)="addCardValue($event)">+</button>
 
