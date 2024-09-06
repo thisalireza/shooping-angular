@@ -49,7 +49,7 @@
 
 
 //set persian font
-h1,h2,h3,h4,h5,h6,p,span,li,ul,button,input{
+h1,h2,h3,h4,h5,h6,p,span,li,ul,button,input,del{
   font-family: "YekanBakh-Regular", sans-serif !important;
   font-size:16px;font-style:normal;
   -webkit-font-smoothing: antialiased;
@@ -60,7 +60,7 @@ h1,h2,h3,h4,h5,h6,p,span,li,ul,button,input{
 
 
 //set english font
-p:lang(en_US), span:lang(en_US), li:lang(en_US), ul:lang(en_US), h1:lang(en_US), h2:lang(en_US), h3:lang(en_US), h4:lang(en_US), h5:lang(en_US), h6:lang(en_US) {
+p:lang(en_US), del:lang(en_US), span:lang(en_US), li:lang(en_US), ul:lang(en_US), h1:lang(en_US), h2:lang(en_US), h3:lang(en_US), h4:lang(en_US), h5:lang(en_US), h6:lang(en_US) {
   font-family: "Montserrat-Regular", sans-serif !important;
   font-style:normal;
   -webkit-font-smoothing: antialiased;
@@ -139,23 +139,35 @@ p:lang(en_US), span:lang(en_US), li:lang(en_US), ul:lang(en_US), h1:lang(en_US),
 
 
 //scroll-bar styles
-/* width */
+//width
 ::-webkit-scrollbar {
   Scrollbar-width: thin;
 }
 
-/* Track */
+ //Track
 ::-webkit-scrollbar-track {
   background: #54595f00 !important;
 }
 
-/* Handle */
+//Handle
 ::-webkit-scrollbar-thumb  {
   background: #EE1F1F !important;
   border-radius:10px !important;
 }
 
-/* Handle on hover */
+ //Handle on hover
 ::-webkit-scrollbar-thumb:hover {
   background: #626262 !important;
+}
+
+ //Text Selection Color Code for Firefox
+::-moz-selection {
+  color: #fff;
+  background: #626262;
+}
+
+//Text Selection Color
+::selection {
+  color: #fff;
+  background: #626262;
 }

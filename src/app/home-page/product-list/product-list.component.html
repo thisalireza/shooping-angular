@@ -1,0 +1,41 @@
+<div class="container">
+  <section class="py-5">
+    <h4 class="fw-bold fs-22 text-center">محصولات</h4>
+    <div class="row row-cols-2 row-cols-md-4 g-4 ">
+      <div class="col rounded-3  card-product ">
+        <div class="card h-100 ">
+          <img [src]="product.image"
+               class="card-img-top w-100 px-3" alt="Skyscrapers"/>
+          <div class="card-body">
+            <h3 class="card-title text-center fw-bold" lang="en_US">{{product.name}}</h3>
+            <div class="pt-2">
+              <p>رنگ: {{product.color}}</p>
+              <p>وضعیت موجودی: {{product.instock > 0
+                ? product.instock + " کالا موجود است"
+                : "کالایی موجود نیست"
+                }}
+              </p>
+            </div>
+
+
+          </div>
+          <div class="card-footer  text-center">
+            <del> {{product.price + "تومن"}}</del>
+            <p>تخفیف:   {{product.discount}}   درصد </p>
+            <p>قیمت با تخفیف:   {{getDiscountPrice().toFixed()}}   تومن </p>
+            <!--            <p> {{name}} </p>-->
+            <!--            <button class="btn btn-outline-danger " [disabled]="!(product.instock > 0)" >خرید</button>-->
+            <!--            <input (input)="onNameChange($event)">-->
+            <button class="btn rounded-3 " (click)="increaseCardValue($event)">-</button>
+
+            <span class="px-2"> {{ addToCard }} </span>
+            <button class="btn rounded-3" (click)="addCardValue($event)">+</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</div>

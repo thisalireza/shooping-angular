@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import {MdbCollapseModule} from "mdb-angular-ui-kit/collapse";
 
 @Component({
-  selector: 'app-menu',
+  selector: 'app-header',
   standalone: true,
   imports: [
     MdbCollapseModule
   ],
-  templateUrl: './menu.component.html',
-  styleUrl: './menu.component.scss'
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.scss'
 })
 export class MenuComponent {
 

@@ -21,13 +21,14 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MenuComponent} from "./menu/menu.component";
-import {FooterComponent} from "./footer/footer.component";
-import {HomePageComponent} from "./home-page/home-page.component";
+import {MenuComponent} from "./shared/header/header.component";
+import {FooterComponent} from "./shared/footer/footer.component";
+import {HomePageComponent} from "./home-page/homePage/homePage.component";
 
 
 // Initialization for ES Users
 import { Collapse,initMDB } from 'mdb-ui-kit';
+import {ProductListComponent} from "./home-page/product-list/product-list.component";
 
 initMDB({ Collapse });
 
@@ -57,6 +58,7 @@ initMDB({ Collapse });
     MenuComponent,
     FooterComponent,
     HomePageComponent,
+    ProductListComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
