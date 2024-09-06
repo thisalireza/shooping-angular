@@ -49,7 +49,7 @@
 
 
 //set persian font
-h1,h2,h3,h4,h5,h6,p,span,li,ul{
+h1,h2,h3,h4,h5,h6,p,span,li,ul,button,input{
   font-family: "YekanBakh-Regular", sans-serif !important;
   font-size:16px;font-style:normal;
   -webkit-font-smoothing: antialiased;
@@ -62,7 +62,7 @@ h1,h2,h3,h4,h5,h6,p,span,li,ul{
 //set english font
 p:lang(en_US), span:lang(en_US), li:lang(en_US), ul:lang(en_US), h1:lang(en_US), h2:lang(en_US), h3:lang(en_US), h4:lang(en_US), h5:lang(en_US), h6:lang(en_US) {
   font-family: "Montserrat-Regular", sans-serif !important;
-  font-size:16px;font-style:normal;
+  font-style:normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;

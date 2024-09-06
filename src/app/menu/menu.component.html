@@ -2,11 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
   <!-- Container wrapper -->
   <div class="container-fluid">
-    <div>
-      <img src="../../assets/images/newlogoweb-2.png" alt="logo" class="p-2 navbar-logo">
-    </div>
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">Brand</a>
+
 
     <!-- Toggle button -->
     <button
@@ -21,42 +17,55 @@
 
     <!-- Collapsible wrapper -->
     <div
-      class="collapse navbar-collapse"
+      class="collapse navbar-collapse "
       id="navbarSupportedContent"
       mdbCollapse
       #basicNavbar="mdbCollapse"
     >
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      <!-- Search form -->
+      <form class="d-flex input-group w-auto ">
+        <input
+          type="search"
+          class="form-control  "
+          placeholder="جستجو..."
+          aria-label="Search"
+          dir="rtl"
+        />
+        <button class="btn btn-outline-danger " type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+          </svg>
+        </button>
+      </form>
+
+      <!-- Menu links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">فروشگاه</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-          >Disabled</a
+          <a class="nav-link" href="#">تماس با ما</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"
+          >درباره ما</a
           >
         </li>
       </ul>
-      <!-- Left links -->
 
-      <!-- Search form -->
-      <form class="d-flex input-group w-auto">
-        <input
-          type="search"
-          class="form-control"
-          placeholder="Type query"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-primary" type="button">
-          Search
-        </button>
-      </form>
+
+
     </div>
 
-
+    <a href="#" class="navbar-brand">
+      <img src="../../assets/images/newlogoweb-2.png" alt="logo" class="p-2 navbar-logo">
+    </a>
     <!-- Collapsible wrapper -->
   </div>
   <!-- Container wrapper -->
