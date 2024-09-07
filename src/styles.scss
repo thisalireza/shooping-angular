@@ -3,25 +3,74 @@
 
 @import 'mdb-angular-ui-kit/assets/scss/mdb.scss';
 
-//Persian Regular font
-@font-face {font-family: "YekanBakh-Regular";
-  src: url("./assets/fonts/Yekan Bakh/YekanBakh-Regular/YekanBakh-Regular.eot"); /* IE9*/
-  src: url("./assets/fonts/Yekan Bakh/YekanBakh-Regular/YekanBakh-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("./assets/fonts/Yekan Bakh/YekanBakh-Regular/YekanBakh-Regular.woff2") format("woff2"), /* chrome、firefox */
-  url("./assets/fonts/Yekan Bakh/YekanBakh-Regular/YekanBakh-Regular.woff") format("woff"), /* chrome、firefox */
-  url("./assets/fonts/Yekan Bakh/YekanBakh-Regular/YekanBakh-Regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("./assets/fonts/Yekan Bakh/YekanBakh-Regular/YekanBakh-Regular.svg#YekanBakh-Regular") format("svg"); /* iOS 4.1- */
+
+
+//persian font
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 100;
+  src: url('./assets/fonts/Yekan Bakh/woff/YekanBakhFaNum-Thin.woff') format('woff'),
+  url('./assets/fonts/Yekan Bakh/woff2/YekanBakhFaNum-Thin.woff2') format('woff2');
 }
 
-//Persian Bold font
-@font-face {font-family: "YekanBakh-Bold";
-  src: url("./assets/fonts/Yekan Bakh/YekanBakh-Bold/YekanBakh-Bold.eot"); /* IE9*/
-  src: url("./assets/fonts/Yekan Bakh/YekanBakh-Bold/YekanBakh-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("./assets/fonts/Yekan Bakh/YekanBakh-Bold/YekanBakh-Bold.woff2") format("woff2"), /* chrome、firefox */
-  url("./assets/fonts/Yekan Bakh/YekanBakh-Bold/YekanBakh-Bold.woff") format("woff"), /* chrome、firefox */
-  url("./assets/fonts/Yekan Bakh/YekanBakh-Bold/YekanBakh-Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("./assets/fonts/Yekan Bakh/YekanBakh-Bold/YekanBakh-Bold.svg#YekanBakh-Regular") format("svg"); /* iOS 4.1- */
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 300;
+  src: url('./assets/fonts/Yekan Bakh/woff/YekanBakhFaNum-Light.woff') format('woff'),
+  url('./assets/fonts/Yekan Bakh/woff2/YekanBakhFaNum-Light.woff2') format('woff2');
 }
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/Yekan Bakh/woff/YekanBakhFaNum-Regular.woff') format('woff'),
+  url('./assets/fonts/Yekan Bakh/woff2/YekanBakhFaNum-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/Yekan Bakh/woff/YekanBakhFaNum-SemiBold.woff') format('woff'),
+  url('./assets/fonts/Yekan Bakh/woff2/YekanBakhFaNum-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: bold;
+  src: url('./assets/fonts/Yekan Bakh/woff/YekanBakhFaNum-Bold.woff') format('woff'),
+  url('./assets/fonts/Yekan Bakh/woff2/YekanBakhFaNum-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 800;
+  src: url('./assets/fonts/Yekan Bakh/woff/YekanBakhFaNum-ExtraBold.woff') format('woff'),
+  url('./assets/fonts/Yekan Bakh/woff2/YekanBakhFaNum-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 900;
+  src: url('./assets/fonts/Yekan Bakh/woff/YekanBakhFaNum-Black.woff') format('woff'),
+  url('./assets/fonts/Yekan Bakh/woff2/YekanBakhFaNum-Black.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 950;
+  src: url('./assets/fonts/Yekan Bakh/woff/YekanBakhFaNum-ExtraBlack.woff') format('woff'),
+  url('./assets/fonts/Yekan Bakh/woff2/YekanBakhFaNum-ExtraBlack.woff2') format('woff2');
+}
+
+
 
 
 //English Regular font
@@ -50,7 +99,7 @@
 
 //set persian font
 h1,h2,h3,h4,h5,h6,p,span,li,ul,button,input,del{
-  font-family: "YekanBakh-Regular", sans-serif !important;
+  font-family: "Yekan Bakh", sans-serif !important;
   font-size:16px;font-style:normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
