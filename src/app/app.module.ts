@@ -29,6 +29,7 @@ import {HomePageComponent} from "./home-page/homePage/homePage.component";
 // Initialization for ES Users
 import { Collapse,initMDB } from 'mdb-ui-kit';
 import {ProductListComponent} from "./shopping/product-list/product-list.component";
+import {RouterOutlet} from "@angular/router";
 
 initMDB({ Collapse });
 
@@ -59,6 +60,7 @@ initMDB({ Collapse });
     FooterComponent,
     HomePageComponent,
     ProductListComponent,
+    RouterOutlet,
   ],
   providers: [],
   bootstrap: [AppComponent]
