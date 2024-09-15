@@ -2,7 +2,7 @@ import {Component, HostListener, inject} from '@angular/core';
 import {MdbCollapseModule} from "mdb-angular-ui-kit/collapse";
 import {SearchComponent} from "../search/search.component";
 import {NgIf} from "@angular/common";
-import {Router} from "@angular/router";
+import {Router, RouterLink, RouterLinkActive} from "@angular/router";
 
 
 @Component({
@@ -11,7 +11,9 @@ import {Router} from "@angular/router";
   imports: [
     MdbCollapseModule,
     SearchComponent,
-    NgIf
+    NgIf,
+    RouterLink,
+    RouterLinkActive
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
