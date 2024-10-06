@@ -30,6 +30,7 @@ import {HomePageComponent} from "./home-page/homePage/homePage.component";
 import { Collapse,initMDB } from 'mdb-ui-kit';
 import {ProductListComponent} from "./shopping/product-list/product-list.component";
 import {RouterOutlet} from "@angular/router";
+import {AppRoutingModule} from "./app-routing.module";
 
 initMDB({ Collapse });
 
@@ -39,6 +40,7 @@ initMDB({ Collapse });
     AppComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     MdbAccordionModule,
